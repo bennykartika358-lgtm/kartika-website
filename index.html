@@ -1,122 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Kartika F&J CO LTD</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Kartika F&J CO LTD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Luxury Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Playfair Display", serif;
-      background: #f8f8f8;
-      color: #111;
-    }
+<style>
+body{
+  margin:0;
+  font-family:Inter,sans-serif;
+  background:#f6f6f6;
+  color:#111;
+}
+h1,h2,h3{font-family:"Playfair Display",serif;}
 
-    header {
-      height: 85vh;
-      background: url('https://images.unsplash.com/photo-1520975922284-9f7a5b8c9c0c') center/cover;
-      position: relative;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+header{
+  height:90vh;
+  background:url("https://images.unsplash.com/photo-1520975922284-9f7a5b8c9c0c?auto=format&fit=crop&w=1600&q=80") center/cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+header::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.55);
+}
+header div{
+  position:relative;
+  z-index:1;
+  max-width:900px;
+  padding:20px;
+}
+h1{font-size:54px;letter-spacing:2px;}
 
-    header::after {
-      content:'';
-      position:absolute;
-      inset:0;
-      background:rgba(0,0,0,0.5);
-    }
+section{padding:80px 8%;}
 
-    header div {
-      position:relative;
-      z-index:1;
-      max-width:800px;
-      padding: 0 20px;
-    }
+.prices{
+  background:#111;
+  color:white;
+  text-align:center;
+}
 
-    h1 {
-      font-size: 52px;
-      font-weight: 500;
-      letter-spacing: 2px;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:32px;
+}
 
-    h2 {
-      font-weight: 500;
-      letter-spacing: 1px;
-      margin-bottom: 30px;
-    }
+.card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-6px);}
+.card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+.card div{padding:18px;}
+.price{font-weight:600;margin:8px 0;}
 
-    section {
-      padding: 70px 8%;
-    }
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:30px;
+  text-decoration:none;
+  background:#111;
+  color:white;
+  font-size:14px;
+  margin-right:8px;
+}
 
-    .prices {
-      background: #111;
-      color: white;
-      text-align: center;
-    }
+.crypto{
+  margin-top:10px;
+  font-size:13px;
+  color:#555;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 28px;
-    }
+.crypto img{
+  height:18px;
+  margin-right:6px;
+  vertical-align:middle;
+}
 
-    .card {
-      background: #fff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:35px;
+  font-size:14px;
+}
 
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-    }
-
-    .card div {
-      padding: 18px;
-    }
-
-    .price {
-      font-weight: 600;
-      margin-top: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px;
-      background: #111;
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    .wa {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: #25D366;
-      color: white;
-      padding: 14px 22px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    }
-  </style>
+.wa{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  background:#25D366;
+  color:white;
+  padding:14px 22px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+</style>
 </head>
 
 <body>
@@ -124,82 +121,102 @@
 <header>
   <div>
     <h1>Kartika F&J CO LTD</h1>
-    <p>Modern luxury fashion & jewelry. Transparent pricing. Open 24 hours.</p>
+    <p>Luxury Fashion & Jewelry · Singapore · 24/7 Service</p>
   </div>
 </header>
 
 <section class="prices">
-  <h2>Live Precious Metal Prices (USD)</h2>
+  <h2>Live Precious Metal Prices</h2>
   <p>Gold: <strong><span id="gold">Loading...</span></strong></p>
-  <p>Platinum: <strong><span id="platinum">Loading...</span></strong></p>
-  <small>Updated automatically</small>
+  <p>Silver: <strong><span id="silver">Loading...</span></strong></p>
 </section>
 
 <section>
-  <h2>Jewelry Collection</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e">
-      <div>
-        <strong>18K Gold Necklace</strong>
-        <div class="price">$1,250 USD</div>
-      </div>
-    </div>
+<h2>Jewelry Collection</h2>
+<div class="grid">
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1">
-      <div>
-        <strong>Diamond Ring</strong>
-        <div class="price">$2,980 USD</div>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e">
+<div>
+<strong>18K Gold Necklace</strong>
+<div class="price">$1,250 USD</div>
+<a class="btn" href="https://wa.me/6581336496" target="_blank">Order</a>
+<div class="crypto">
+<img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png">
+<img src="https://cryptologos.cc/logos/ethereum-eth-logo.png">
+<img src="https://cryptologos.cc/logos/tether-usdt-logo.png">
+<img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png">
+</div>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0">
-      <div>
-        <strong>Pearl Bracelet</strong>
-        <div class="price">$640 USD</div>
-      </div>
-    </div>
-  </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1">
+<div>
+<strong>Diamond Ring</strong>
+<div class="price">$2,980 USD</div>
+<a class="btn" href="https://wa.me/6581336496" target="_blank">Order</a>
+<div class="crypto">BTC · ETH · USDT · USDC</div>
+</div>
+</div>
+
+</div>
 </section>
 
 <section>
-  <h2>Fashion Collection</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1520974735194-6c4f1a1c6f98">
-      <div>
-        <strong>Silk Evening Dress</strong>
-        <div class="price">$890 USD</div>
-      </div>
-    </div>
+<h2>Fashion Collection</h2>
+<div class="grid">
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1593032465171-8c2c0fa2bb9b">
-      <div>
-        <strong>Luxury Handbag</strong>
-        <div class="price">$1,450 USD</div>
-      </div>
-    </div>
-  </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520974735194-6c4f1a1c6f98">
+<div>
+<strong>Silk Evening Dress</strong>
+<div class="price">$890 USD</div>
+<a class="btn" href="https://wa.me/6581336496" target="_blank">Order</a>
+<div class="crypto">BTC · ETH · USDT · USDC</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593032465171-8c2c0fa2bb9b">
+<div>
+<strong>Luxury Handbag</strong>
+<div class="price">$1,450 USD</div>
+<a class="btn" href="https://wa.me/6581336496" target="_blank">Order</a>
+<div class="crypto">BTC · ETH · USDT · USDC</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section style="text-align:center">
+<h2>Crypto Payment</h2>
+<p>
+We accept <strong>Bitcoin (BTC), Ethereum (ETH), USDT & USDC</strong><br>
+After payment, please send transaction hash via WhatsApp.
+</p>
+<p>
+<strong>Business Location:</strong> Singapore 🇸🇬
+</p>
 </section>
 
 <footer>
-  © 2026 Kartika F&J CO LTD · Open 24 Hours
+© 2026 Kartika F&J CO LTD · Singapore · Secure Crypto Payments
 </footer>
 
 <a class="wa" href="https://wa.me/6581336496" target="_blank">WhatsApp Us</a>
 
-<!-- LIVE METAL PRICES -->
 <script>
-fetch("https://api.metals.live/v1/spot")
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("gold").innerText = "$" + data.gold + " / oz";
-    document.getElementById("platinum").innerText = "$" + data.platinum + " / oz";
-  });
+fetch("https://data-asg.goldprice.org/dbXRates/USD")
+.then(r=>r.json())
+.then(d=>{
+  gold.innerText="$"+d.items[0].xauPrice.toFixed(2)+" / oz";
+  silver.innerText="$"+d.items[0].xagPrice.toFixed(2)+" / oz";
+});
 </script>
 
 </body>
 </html>
+
+
