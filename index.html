@@ -38,17 +38,10 @@ header div{
   max-width:900px;
   padding:20px;
 }
-h1{font-size:56px;letter-spacing:2px;color:#f5d48a;}
+h1{font-size:56px;color:#f5d48a;}
 header p{font-size:18px;color:#ddd;}
 
 section{padding:80px 8%;}
-
-.prices{
-  background:#111;
-  text-align:center;
-  border-top:1px solid #222;
-  border-bottom:1px solid #222;
-}
 
 .grid{
   display:grid;
@@ -61,39 +54,24 @@ section{padding:80px 8%;}
   border-radius:20px;
   overflow:hidden;
   box-shadow:0 20px 50px rgba(0,0,0,.6);
-  transition:.3s;
 }
-.card:hover{transform:translateY(-6px);}
 .card img{
   width:100%;
   height:280px;
   object-fit:cover;
 }
 .card div{padding:20px;}
-.price{font-weight:500;color:#f5d48a;margin:8px 0;}
+.price{color:#f5d48a;margin:8px 0;font-weight:500;}
 
 .btn{
   display:inline-block;
   padding:10px 18px;
   border-radius:30px;
-  text-decoration:none;
   background:#f5d48a;
   color:#000;
+  text-decoration:none;
   font-size:14px;
   font-weight:500;
-}
-
-.crypto img{
-  height:18px;
-  margin-right:6px;
-}
-
-footer{
-  background:#000;
-  color:#777;
-  text-align:center;
-  padding:40px;
-  font-size:14px;
 }
 
 .wa{
@@ -107,6 +85,13 @@ footer{
   text-decoration:none;
   font-weight:600;
 }
+
+footer{
+  background:#000;
+  color:#777;
+  text-align:center;
+  padding:40px;
+}
 </style>
 </head>
 
@@ -119,55 +104,65 @@ footer{
   </div>
 </header>
 
-<section class="prices">
-  <h2>Live Precious Metal Prices</h2>
-  <p>Gold: <strong><span id="gold">Loading...</span></strong></p>
-  <p>Silver: <strong><span id="silver">Loading...</span></strong></p>
-</section>
-
-<!-- JEWELRY COLLECTION -->
+<!-- JEWELRY -->
 <section>
 <h2>Jewelry Collection</h2>
 <div class="grid">
 
-<div class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e"><div><strong>18K Gold Necklace</strong><div class="price">$1,250 USD</div><a class="btn" href="https://wa.me/6581336496">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1"><div><strong>Diamond Ring</strong><div class="price">$2,980 USD</div><a class="btn" href="https://wa.me/6581336496">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0"><div><strong>Pearl Bracelet</strong><div class="price">$640 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f"><div><strong>Luxury Earrings</strong><div class="price">$780 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1610223515982-5b1c34f4f99b"><div><strong>Gold Bangles</strong><div class="price">$1,180 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1588449668365-d15e397f6787"><div><strong>Emerald Ring</strong><div class="price">$3,400 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338"><div><strong>Sapphire Necklace</strong><div class="price">$2,150 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9"><div><strong>Diamond Studs</strong><div class="price">$920 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1616627981330-76d0d23c6c6d"><div><strong>Gold Chain</strong><div class="price">$1,450 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908"><div><strong>Ruby Ring</strong><div class="price">$2,700 USD</div><a class="btn" href="#">Order</a></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80">
+<div>
+<strong>18K Gold Necklace</strong>
+<div class="price" data-usd="1250">$1,250 USD</div>
+<a class="btn" href="product.html?name=18K%20Gold%20Necklace&price=1250">View Details</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=800&q=80">
+<div>
+<strong>Diamond Ring</strong>
+<div class="price" data-usd="2980">$2,980 USD</div>
+<a class="btn" href="product.html?name=Diamond%20Ring&price=2980">View Details</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80">
+<div>
+<strong>Sapphire Necklace</strong>
+<div class="price" data-usd="2150">$2,150 USD</div>
+<a class="btn" href="product.html?name=Sapphire%20Necklace&price=2150">View Details</a>
+</div>
+</div>
 
 </div>
 </section>
 
-<!-- FASHION COLLECTION -->
+<!-- FASHION -->
 <section>
 <h2>Fashion Collection</h2>
 <div class="grid">
 
-<div class="card"><img src="https://images.unsplash.com/photo-1520974735194-6c4f1a1c6f98"><div><strong>Silk Evening Dress</strong><div class="price">$890 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1593032465171-8c2c0fa2bb9b"><div><strong>Luxury Handbag</strong><div class="price">$1,450 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"><div><strong>Designer Gown</strong><div class="price">$1,980 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b"><div><strong>Premium Dress</strong><div class="price">$980 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1495121605193-b116b5b09c74"><div><strong>Luxury Heels</strong><div class="price">$540 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b"><div><strong>Elegant Blazer</strong><div class="price">$620 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"><div><strong>Luxury Coat</strong><div class="price">$1,250 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3"><div><strong>Designer Suit</strong><div class="price">$2,300 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47"><div><strong>Silk Scarf</strong><div class="price">$280 USD</div><a class="btn" href="#">Order</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1520975922284-9f7a5b8c9c0c"><div><strong>Luxury Watch</strong><div class="price">$3,800 USD</div><a class="btn" href="#">Order</a></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520974735194-6c4f1a1c6f98?auto=format&fit=crop&w=800&q=80">
+<div>
+<strong>Silk Evening Dress</strong>
+<div class="price" data-usd="890">$890 USD</div>
+<a class="btn" href="product.html?name=Silk%20Evening%20Dress&price=890">View Details</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593032465171-8c2c0fa2bb9b?auto=format&fit=crop&w=800&q=80">
+<div>
+<strong>Luxury Handbag</strong>
+<div class="price" data-usd="1450">$1,450 USD</div>
+<a class="btn" href="product.html?name=Luxury%20Handbag&price=1450">View Details</a>
+</div>
+</div>
 
 </div>
-</section>
-
-<section style="text-align:center">
-<h2>Crypto Payment</h2>
-<p>Accepted: <strong>BTC · ETH · USDT · USDC</strong></p>
-<p>After payment, send transaction hash via WhatsApp</p>
-<p><strong>Business Location:</strong> Singapore 🇸🇬</p>
 </section>
 
 <footer>
@@ -177,11 +172,19 @@ footer{
 <a class="wa" href="https://wa.me/6581336496" target="_blank">WhatsApp Us</a>
 
 <script>
-fetch("https://data-asg.goldprice.org/dbXRates/USD")
-.then(r=>r.json())
-.then(d=>{
-  document.getElementById("gold").innerText="$"+d.items[0].xauPrice.toFixed(2)+" / oz";
-  document.getElementById("silver").innerText="$"+d.items[0].xagPrice.toFixed(2)+" / oz";
+/* Auto Currency */
+const rates={USD:1,EUR:0.92,GBP:0.79,SGD:1.35};
+const symbols={USD:"$",EUR:"€",GBP:"£",SGD:"S$"};
+
+let c="USD";
+if(navigator.language.includes("en-GB"))c="GBP";
+else if(navigator.language.includes("de")||navigator.language.includes("fr"))c="EUR";
+else if(navigator.language.includes("en-SG"))c="SGD";
+
+document.querySelectorAll(".price").forEach(p=>{
+  const usd=p.dataset.usd;
+  const val=(usd*rates[c]).toFixed(2);
+  p.innerText=`${symbols[c]}${val} ${c}`;
 });
 </script>
 
